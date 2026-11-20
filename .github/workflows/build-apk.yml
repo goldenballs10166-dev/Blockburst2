@@ -13,7 +13,7 @@ jobs:
           distribution: temurin
           java-version: '17'
       
-      - name: Extract project
+   - name: Extract project
         run: |
           ZIP=$(find . -maxdepth 1 -iname 'BlockBurst-Android-Source.zip' -print -quit)
           test -n "$ZIP" || { echo 'Project ZIP not found'; exit 1; }
